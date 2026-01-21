@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+</head>
+<style>
+    body {
+        zoom: 1.5;
+    }
+    h2 {
+        color: #0db840;
+    }
+    button {
+        font-size: 20px;
+        color: rgb(238, 1, 1);
+        margin-top: 10px;
+        align-items: center;
+        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    }
+</style>
+<body>
+        <h2 id="greeting">Hello User!</h2>
+    <button onclick="changeGreeting()">Change Text</button>
+    
+    <script>
+        function changeGreeting() {
+            // Get the element and change its text
+            document.getElementById("greeting").innerHTML = 
+                "Welcome to JavaScript!🎉🎉 ";
+        }
+    </script>
+</body>
+</html>
